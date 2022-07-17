@@ -1,0 +1,16 @@
+@use '../_layout/vars'as vars;
+@use '../_layout/mixins' as mixin;
+
+body{
+    font-family: vars.$font;
+    font-size: 15px;
+    background-color: vars.$blue-veryDark;
+    color: vars.$white;
+    overflow-x: hidden;
+}
+
+.main{
+    @include mixin.flex(center,center,column);
+    width: 100vw;
+    height: 100vh;
+}

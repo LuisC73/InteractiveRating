@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="./src/stylesheets/css/style.css">
+</head>
+<body>
+
+  <main class="main">
+    <section class="rating">
+        <div class="rating__start ">
+            <div class="rating__star">
+              <img src="./src/images/icon-star.svg" alt="" class="rating__img">
+            </div>
+            <h3 class="rating__h3">
+              How did we do?
+            </h3>
+            <p class="rating__p">Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!</p>
+              <div class="rating__buttons">
+                <a href="#" class="rating__a">1</a>
+                <a href="#" class="rating__a">2</a>
+                <a href="#" class="rating__a">3</a>
+                <a href="#" class="rating__a">4</a>
+                <a href="#" class="rating__a">5</a>
+              </div>
+              
+              <input type="button" value="Submit" class="rating__button">
+        </div>
+        <div class="rating__end">
+          <img src="./src/images/illustration-thank-you.svg" alt="thank-you" class="rating__img rating__img--thank">
+          <p class="rating__total">  You selected <!-- Add rating here --> <span class="rating__select"></span> out of 5</p>
+          <h3 class="rating__h3 rating__h3--thank">Thank you!</h3>
+          <p class="rating__p rating__p--thank">We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+        </div>
+    </section>
+  </main>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="./src/js/main.js"></script>
+</body>
+</html>

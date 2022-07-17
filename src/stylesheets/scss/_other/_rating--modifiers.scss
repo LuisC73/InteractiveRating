@@ -1,0 +1,32 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.rating{
+    &__img--thank{
+        width: 8rem;
+        margin: .6rem 0 2rem 0;
+    }
+
+    &__h3--thank{
+        margin-top: 1.5rem;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    &__p--thank{
+        text-align: center;
+    }
+
+    &__end--active{
+        @include mixin.flex(center,center,column);
+    }
+
+    &__start--hide{
+        display: none;
+    }
+
+    &__a--active{
+        background-color: vars.$gray-medium;
+        color: #fff;
+    }
+}
